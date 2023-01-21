@@ -7,50 +7,65 @@
   <title>Document</title>
 </head>
 <body>
-  <form action="#" method="post" enctype="multipart/form-data"></form>
-<div>
+<form action="#" method="get" enctype="multipart/form-data">
+  <div>
+    <p>Имя</p>
+    <input tabindex="1" type="text" name="username" value="">
+  </div>
+  <div>
+    <p>Пароль</p>
+    <input tabindex="2" type="password" name="userpass" value="">
+  </div>
+  <div>
+    <p>Телефон</p>
+    <input tabindex="3" type="tel" name="number" value="">
+  </div>
+  <div>
+    <p>Пол</p>
+    <div>
+    <input tabindex="4" checked type="radio" name="gender" value="men">Мужской
+    </div>
+    <div>
+    <input tabindex="4" type="radio" name="gender" value="woman">Женский
+    </div>
+  </div>
+  <div>
+    <p>Имущество</p>
+    <div>
+    <input tabindex="5" checked type="checkbox" name="bike" value="yes">Велик
 
-  <input type="text" name="username" value="">
-</div>
-<div>
+    </div>
+    <div>
+      <input tabindex="6" type="checkbox" name="car" value="yes">Машина
 
-  <input type="password" name="userpass" value="">
-</div>
-<div>
-  <p> <input type="radio" name="beer" value="lager"> Светлое пиво</p>
-  <p> <input type="radio" name="beer" value="dark"> Темное пиво</p>
-</div>
-<br>
-<div>
-  <p> <input type="radio" name="beer2" value="lager"> Светлое пиво</p>
-  <p> <input type="radio" name="beer2" value="dark"> Темное пиво</p>
-</div>
-<br>
-<div>
-  <p><input type="checkbox" name="car" value="yes">Наличие авто</p>
-  <p><input type="checkbox" name="car2" value="yes">Наличие авто2</p>
-  <p><input type="checkbox" name="car3" value="yes">Наличие авто3</p>
-</div>
-<br>
-<div>
-  <p><input type="file" name="foto" ></p>
-  <p><input type="file" name="foto" ></p>
-</div>
-<br>
-<div>
-  <textarea name="text" cols="30" rows="10"></textarea>
-</div>
-<div>
-  <select name="color">
-    <option value="red"> красный</option>
-    <option value="yellow">желтый</option>
-    <option value="blue"> голубой</option>
-  </select>
-</div>
-<br>
-<div>
-  <button type="submit">Отправить</button>
-</div>
+    </div>
+    <div>
+      <input tabindex="7" disabled type="checkbox" name="house" value="yes">Квартира
 
+    </div>
+  </div>
+  <div>
+    <p>Дополнительная информация</p>
+    <textarea tabindex="8" name="text" ></textarea>
+
+  </div>
+  <div>
+    <p>Прикрепить фото</p>
+    <input tabindex="9" type="file">
+  </div>
+  <div>
+    <p>Любимый цвет</p>
+    <select tabindex="10" name="color">
+      <option value="red">Красный</option>
+      <option value="green">Зеленый</option>
+      <option selected value="blue">Голубой</option>
+    </select>
+  </div>
+  <div>
+    <p>Действия</p>
+    <button tabindex="11" type="submit">Отправить</button>
+    <button tabindex="12" type="reset">Очистить</button>
+  </div>
+</form>
 </body>
 </html>
